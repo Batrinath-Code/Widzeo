@@ -1,4 +1,5 @@
 import React from 'react'
+import BlackButton from './BlackButton'
 
 const NewLetter = () => {
   return (
@@ -13,6 +14,7 @@ const NewLetter = () => {
       {/* <Button variant="secondary" size="lg" className="rounded-full px-8 py-3 text-lg font-semibold">
         Get In Touch
       </Button> */}
+      <BlackButton text="Get In Touch" white="true"/>
     </div>
     <div className="absolute inset-0 opacity-20">
       <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>

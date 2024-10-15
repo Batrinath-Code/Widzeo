@@ -1,19 +1,15 @@
 import React from "react";
-import medzoImg from "../assets/medzoImg.png";
-import edzoImg from "../assets/edzoImg.png";
-import medzoLogoImg from "../assets/medzoLogoImg.png";
-import edzoLogoImg from "../assets/edzoLogoImg.png";
 import staticImg from "../assets/staticImg.svg";
 import Button from "./Button";
 import BlackButton from "./BlackButton";
 
 const ProductCard = ({ name, description, logoSrc, screenshotsSrc, left }) => (
   <div
-    className={`flex flex-col-reverse md:flex-row items-center justify-end gap-8 mb-16`}
+    className={ `flex ${left ? "flex-col-reverse" :"flex-col"} md:flex-row items-center justify-end gap-8 mb-16`}
   >
     <div className="w-full md:w-1/3">
-      <img src={logoSrc} alt={`${name} logo`} className="h-12 mb-4" />
-      <p className="text-gray-600 mb-6 text-2xl">{description}</p>
+      <img src={logoSrc} alt={`${name} logo`} className="h-12 mb-4 mx-auto md:mx-0" />
+      <p className="text-gray-600 mb-6 text-2xl text-center md:text-left">{description}</p>
       <div className="flex gap-4">
         <Button>
           Explore Details
@@ -62,7 +58,7 @@ const ProductSection = ({ data }) => {
   const edzoData = data.products[1];
   return (
     <>
-      <section className="py-16 bg-gray-50">
+      <section className="py-0 md:py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h1 className="text-title-sm md:text-title-md text-gray-800 font-bold text-center mb-16">
             {data.titleText}
@@ -101,8 +97,8 @@ const ProductSection = ({ data }) => {
             </div>
 
             <div className="w-full md:w-1/2">
-              <h2 className="text-[48px] font-bold mb-4"> Design</h2>
-              <p className="text-[24px] text-gray-600 mb-6">
+              <h2 className="text-title-sm md:text-[48px] font-bold mb-4"> Design</h2>
+              <p className="text-description-sm md:text-[24px] text-gray-600 mb-6">
                 Our design experts create visually stunning and user-friendly
                 interfaces that resonate with your audience. We craft
                 responsive, brand-aligned designs that offer seamless
@@ -123,8 +119,8 @@ const ProductSection = ({ data }) => {
             </div>
 
             <div className="w-full md:w-1/2">
-              <h2 className="text-[48px] font-bold mb-4"> Development</h2>
-              <p className="text-[24px] text-gray-600 mb-6">
+              <h2 className="text-title-sm md:text-[48px] font-bold mb-4"> Development</h2>
+              <p className="text-description-sm md:text-[24px] text-gray-600 mb-6">
                 We craft scalable, powerful apps that push your business higher.
                 Mobile or web, our solutions are fast, secure, and built to
                 inspire. Seamless performance, flawless flow, tailored to your

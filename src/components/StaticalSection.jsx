@@ -3,7 +3,7 @@ import React from "react";
 const Statistic = ({ number, title, description }) => (
   <div className="text-center">
     <div className="text-5xl font-bold mb-2">{number}</div>
-    <div className="text-xl font-semibold mb-2">{title}</div>
+    <div className=" text-xl text-nowrap font-semibold mb-2">{title}</div>
     <p className="text-gray-600">{description}</p>
   </div>
 );
