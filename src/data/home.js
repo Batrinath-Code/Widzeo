@@ -15,7 +15,6 @@ import medzoImg from "../assets/medzoImg.png";
 import edzoImg from "../assets/edzoImg.png";
 import medzoLogoImg from "../assets/medzoLogoImg.png";
 import edzoLogoImg from "../assets/edzoLogoImg.png";
-import staticImg from "../assets/staticImg.svg";
 
 export const home = {
   mainSection: {

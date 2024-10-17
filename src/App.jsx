@@ -11,19 +11,21 @@ import StaticalSection from "./components/StaticalSection";
 import TopNavigation from "./components/TopNavigation";
 
 import {home} from "./data/home.js"
+import SerivesShowCaseSection from "./components/SerivesShowCaseSection.jsx";
 
 function App() {
   return (
 
      <BrowserRouter>
+     
       <TopNavigation />
       <MainSection data={home.mainSection}/>
-      <ClientSection clientLog={home.clientSection.img}/>
+      <ClientSection clientLog={[...home.clientSection.img,...home.clientSection.img]}/>
       <ServiceSection data={home.zohoServiceSection}/>
       <ProductSection data={home.productSection}/>
+      <SerivesShowCaseSection/>
       <StaticalSection data={home.growthSection}/>
       <ReviewSection />
-      <NewLetter />
       <Footer />
       </BrowserRouter>
   );

@@ -1,7 +1,5 @@
 import React from "react";
-import staticImg from "../assets/staticImg.svg";
 import Button from "./Button";
-import BlackButton from "./BlackButton";
 
 const ProductCard = ({ name, description, logoSrc, screenshotsSrc, left }) => (
   <div
@@ -81,57 +79,7 @@ const ProductSection = ({ data }) => {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h1 className="text-title-sm md:text-title-md font-bold text-center text-gray-800 mb-16">
-            Our services
-          </h1>
 
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-full md:w-1/2">
-              <img
-                src={staticImg}
-                alt="Product designer working at a desk with a computer"
-                className="w-full h-auto"
-              />
-            </div>
-
-            <div className="w-full md:w-1/2">
-              <h2 className="text-title-sm md:text-[48px] font-bold mb-4"> Design</h2>
-              <p className="text-description-sm md:text-[24px] text-gray-600 mb-6">
-                Our design experts create visually stunning and user-friendly
-                interfaces that resonate with your audience. We craft
-                responsive, brand-aligned designs that offer seamless
-                experiences across all devices. Every pixel is designed to
-                captivate and engage.-
-                <b className="text-gray-600">”Craft. Create. Captivate.”</b>
-              </p>
-              <BlackButton text="Explore more" />
-            </div>
-          </div>
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-full md:w-1/2">
-              <img
-                src={staticImg}
-                alt="Product designer working at a desk with a computer"
-                className="w-full h-auto"
-              />
-            </div>
-
-            <div className="w-full md:w-1/2">
-              <h2 className="text-title-sm md:text-[48px] font-bold mb-4"> Development</h2>
-              <p className="text-description-sm md:text-[24px] text-gray-600 mb-6">
-                We craft scalable, powerful apps that push your business higher.
-                Mobile or web, our solutions are fast, secure, and built to
-                inspire. Seamless performance, flawless flow, tailored to your
-                desire.-
-                <b className="text-gray-600">“Design. Develop. Deliver.”</b>
-              </p>
-              <BlackButton text="Explore more" />
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 };
