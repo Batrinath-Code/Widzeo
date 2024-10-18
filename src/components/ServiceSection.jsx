@@ -35,7 +35,7 @@ const ServiceSection = ({ data }) => {
           </div>
         </div>
 
-        <img className="w-1/2 hidden md:block" src={sericeImg} alt="widzeo" />
+        <img className="w-1/2 hidden lg:block" src={sericeImg} alt="widzeo" />
       </div>
     </section>
   );

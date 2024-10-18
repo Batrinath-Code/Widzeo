@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 import ClientSection from "./components/ClientSection";
 import Footer from "./components/Footer";
 import MainSection from "./components/MainSection";
@@ -9,25 +9,26 @@ import ReviewSection from "./components/ReviewSection";
 import ServiceSection from "./components/ServiceSection";
 import StaticalSection from "./components/StaticalSection";
 import TopNavigation from "./components/TopNavigation";
-
-import {home} from "./data/home.js"
+import { home } from "./data/home.js";
 import SerivesShowCaseSection from "./components/SerivesShowCaseSection.jsx";
 
 function App() {
   return (
-
-     <BrowserRouter>
-     
+    <BrowserRouter>
       <TopNavigation />
-      <MainSection data={home.mainSection}/>
-      <ClientSection clientLog={[...home.clientSection.img,...home.clientSection.img]}/>
-      <ServiceSection data={home.zohoServiceSection}/>
-      <ProductSection data={home.productSection}/>
-      <SerivesShowCaseSection/>
-      <StaticalSection data={home.growthSection}/>
+ 
+      <MainSection data={home.mainSection} />
+      <ClientSection
+        clientLog={[...home.clientSection.img, ...home.clientSection.img]}
+      />
+      <ServiceSection data={home.zohoServiceSection} />
+      <ProductSection data={home.productSection} />
+      <SerivesShowCaseSection />
+      <StaticalSection data={home.growthSection} />
       <ReviewSection />
+
       <Footer />
-      </BrowserRouter>
+    </BrowserRouter>
   );
 }
 

@@ -1,13 +1,23 @@
 import React from "react";
 import Button from "./Button";
+import MultiScrollEffect from "./MultiScrollEffect";
 
 const ProductCard = ({ name, description, logoSrc, screenshotsSrc, left }) => (
   <div
-    className={ `flex ${left ? "flex-col-reverse" :"flex-col"} md:flex-row items-center justify-end gap-8 mb-16`}
+    className={`flex ${
+      left ? "flex-col-reverse" : "flex-col"
+    } md:flex-row items-center justify-around mb-16`}
   >
-    <div className="w-full md:w-1/3">
-      <img src={logoSrc} alt={`${name} logo`} className="h-12 mb-4 mx-auto md:mx-0" />
-      <p className="text-gray-600 mb-6 text-2xl text-center md:text-left">{description}</p>
+    <div className="w-full md:w-[25%]">
+      <img
+        src={logoSrc}
+        alt={`${name} logo`}
+        className="h-12 mb-4 mx-auto md:mx-0"
+      />
+
+      <p className="text-gray-600 mb-6 text-2xl text-center md:text-left leading-loose">
+        {description}
+      </p>
       <div className="flex gap-4">
         <Button>
           Explore Details
@@ -41,12 +51,12 @@ const ProductCard = ({ name, description, logoSrc, screenshotsSrc, left }) => (
         </Button>
       </div>
     </div>
-    <div className={`w-full md:w-2/3  ${left ? "order-first" : "order-last"}`}>
-      <img
-        src={screenshotsSrc}
-        alt={`${name} screenshots`}
-        className="w-full rounded-lg shadow-lg"
-      />
+    <div
+      className={`w-full md:w-[55%] overflow-hidden self-center  ${
+        left ? "order-first" : "order-last"
+      }`}
+    >
+      {left ? <MultiScrollEffect edzo={left} /> : <MultiScrollEffect />}
     </div>
   </div>
 );
@@ -57,7 +67,7 @@ const ProductSection = ({ data }) => {
   return (
     <>
       <section className="py-0 md:py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className=" mx-auto px-4">
           <h1 className="text-title-sm md:text-title-md text-gray-800 font-bold text-center mb-16">
             {data.titleText}
           </h1>
@@ -78,8 +88,6 @@ const ProductSection = ({ data }) => {
           />
         </div>
       </section>
-
-
     </>
   );
 };

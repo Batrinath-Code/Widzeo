@@ -11,10 +11,10 @@ const SerivesShowCaseSection = () => {
   const { scrollYProgress } = useScroll({ target: targetRef });
 
   // Transform for horizontal scrolling effect
-  const x = useTransform(scrollYProgress, [0, 1], ["20%", "-100%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["10%", "-53%"]);
 
   return (
-    <section className="py-16 bg-grey " ref={targetRef}>
+    <section className="py-16 bg-gray-50" ref={targetRef}>
       <div className="container mx-auto px-4 ">
         <h1 className="text-title-sm md:text-title-md font-bold text-center text-gray-800 mb-16">
           Our services
@@ -22,7 +22,7 @@ const SerivesShowCaseSection = () => {
       </div>
 
       {/* Create a long vertical container to scroll through */}
-      <div className="h-[300vh] relative bg-gray-50 ">
+      <div className="h-[300vh] relative ">
         {/* Sticky horizontal container */}
         <div className="sticky top-0 h-[100vh] flex items-center justify-start overflow-hidden ">
           {/* Horizontal scrolling effect */}
