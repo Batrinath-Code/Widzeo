@@ -13,7 +13,7 @@ export default function CTA() {
               Need a team to grow your business? Get started with a &apos;hello&apos;!
             </p>
           </div>
-          <button className="sm:text-xs text-nowrap bg-[#ff6b35] hover:bg-[#ff8c35] text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+          <button className="sm:text-xs lg:text-xl text-nowrap bg-[#ff6b35] hover:bg-[#ff8c35] text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
             Get In Touch
           </button>
         </div>

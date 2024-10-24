@@ -5,11 +5,12 @@ import medzoImg from '../assets/medzoImg.png'
 import edzoImg from '../assets/edzoImg.png'
 
 
+
 const ProductCard = ({ name, description, logoSrc, screenshotsSrc, left }) => (
   <div
     className={` flex ${
       left ? "flex-col-reverse" : "flex-col"
-    } lg:flex-row items-center justify-center mb-9 lg:mb-16 bg-[url('./bgPattern1.svg')] bg-cover bg-no-repeat`}
+    } lg:flex-row items-center justify-center mb-9 lg:mb-16 bg-[url('bgPattern1.svg')] bg-cover bg-no-repeat`}
     style={!left ? {backgroundPosition: 'right -800px  top 30%'} : {background:'none'}}
   >
     <div className="w-full lg:w-[30%]">

@@ -22,7 +22,7 @@ const StaticalSection = ({ data }) => {
       className=" "
     >
       <div
-        className=" lg:h-[800px]  flex justify-center items-start  bg-[url('./bgPattern.svg')] bg-cover bg-no-repeat"
+        className=" lg:h-[800px]  flex justify-center items-start  bg-[url('bgPattern.svg')] bg-cover bg-no-repeat"
         style={{ backgroundPosition: "right -190px  top 25%" }}
       >
         <div className="container mx-auto px-4 sm:pb-28">
