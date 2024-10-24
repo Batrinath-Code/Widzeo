@@ -43,7 +43,7 @@ const Column = ({ img, direction = "up",edzo }) => {
 
   return (
     <motion.div
-      className={`flex flex-col ${edzo ? "w-1/3" : "w-[200px]"}  gap-3 overflow-hidden`}
+      className={`flex flex-col ${edzo ? "w-1/3" : "w-[400px] h-[800px]"}  gap-3 overflow-hidden`}
       // Set the scroll animation to repeat and reverse continuously
       animate={scrollVariants[direction]}
       transition={{
@@ -73,8 +73,8 @@ const MultiScrollEffect = ({ edzo }) => {
       <Column img={[signin, appoinment, selectDate]} direction="down" />
       <Column img={[noshedule, addappo, patientProfile]} direction="up" />
       <Column img={[addTimer, listAppo, reviewDetail]} direction="down" />
-      <Column img={[myShedule, allAppo, Notifi]} direction="up" />
-      <Column img={[start, nowAppo, message]} direction="down" />
+      {/* <Column img={[myShedule, allAppo, Notifi]} direction="up" />
+      <Column img={[start, nowAppo, message]} direction="down" /> */}
     </div>
   ) : (
     <div className="flex mx-auto gap-3">

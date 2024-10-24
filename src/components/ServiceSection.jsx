@@ -17,12 +17,12 @@ const ServiceSection = ({ data }) => {
       <h1 className="text-title-sm md:text-title-md text-gray-800 font-bold text-center mb-4 ">
         {data.titleText}
       </h1>
-      <p className="text-description-sm md:text-description-md text-center text-gray-600 mb-0 md:mb-12 w-10/12 md:w-1/3 mx-auto">
+      <p className="text-description-sm md:text-description-md text-center text-gray-600 mb-0 md:mb-12 w-10/12 lg:w-1/3 mx-auto">
         {data.descriptionText}
       </p>
-      <div className="container mx-auto px-4 flex">
-        <div>
-          <div className="grid grid-cols-1 md:grid-cols-2  gap-8 mb-12 mt-10 ">
+      <div className="container mx-auto flex items-center justify-between flex-wrap">
+        <div className="w-full lg:w-1/2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 mb-12 my-10 ">
             {data.serviceCard.map((item, i) => (
               <ServiceCard key={i} item={item} />
             ))}
@@ -35,7 +35,11 @@ const ServiceSection = ({ data }) => {
           </div>
         </div>
 
-        <img className="w-1/2 hidden lg:block" src={sericeImg} alt="widzeo" />
+        <img
+          className="w-[40vw] hidden lg:block"
+          src={sericeImg}
+          alt="widzeo"
+        />
       </div>
     </section>
   );

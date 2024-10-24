@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import logo from '../assets/logo.png';
 const TopNavigation = () => {
   const [isOpen, setIsOpen] = useState(false); // State to handle mobile menu toggle
 
@@ -9,7 +9,7 @@ const TopNavigation = () => {
         {/* Logo */}
         <div className="flex items-center">
           <a href="/" className="text-2xl font-bold">
-            Widez<span className="text-orange-500">o</span>
+          <img src={logo} alt="widzeo logo"  />
           </a>
         </div>
 

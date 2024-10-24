@@ -11,11 +11,13 @@ import logo5 from "../assets/clientlogo/logo5.png";
 import logo6 from "../assets/clientlogo/logo6.png";
 
 //service section
-import medzoImg from "../assets/medzoImg.png";
-import edzoImg from "../assets/edzoImg.png";
 import medzoLogoImg from "../assets/medzoLogoImg.png";
 import edzoLogoImg from "../assets/edzoLogoImg.png";
 
+//service showcase
+import design from "../assets/design.svg";
+import development from "../assets/development.svg";
+import software from "../assets/software.svg";
 export const home = {
   mainSection: {
     titleText: "Ignite Innovation: Transform Your Business Digitally",
@@ -41,25 +43,25 @@ export const home = {
         logo: `${EfficientWork}`,
         title: "Efficient Workflow",
         description:
-          "We creates Zoho workflows that automate tasks and streamline operations, helping your business run smarter and more efficiently  - “Your Partner in Growth with Zoho”",
+          "We creates intricate solutions that automate tasks and streamline operations, helping your business run smarter and more efficiently  - “Your Partner in Growth with Zoho”",
       },
       {
         logo: `${oneStop}`,
         title: "One-Stop Shop",
         description:
-          "ZohoPro offers tailored solutions, including seamless integrations and custom automations, to drive growth and efficiency for your business - “Where Every Zoho Solution Comes Together” ",
+          "Zoho offers tailored solutions, including seamless integrations and custom automations, to drive growth and efficiency for your business - “Where Every Zoho Solution Comes Together” ",
       },
       {
         logo: `${realTime}`,
         title: "Real-Time Zoho Solutions",
         description:
-          "Widezo delivers real-time insights across sales, finance, projects, and customer support, enabling you to make informed decisions and drive growth with instant access to crucial data. -  “Real-Time Content, Real Impact.”",
+         "Widezo delivers real-time insights across sales, finance, projects, and customer support, enabling you to make informed decisions and drive growth with instant access to crucial data. -  “Real-Time Content, Real Impact.”",
       },
       {
         logo: `${flexbile}`,
         title: "Flexible Growth Tools",
         description:
-          "We are provides adaptable Zoho solutions that scale with your business, automating processes and enhancing collaboration for limitless growth. – “Empowering Your Business with Flexi Growth Tools”.",
+         "We are provides future proof Zoho solutions that scale your business, automating processes and enhancing collaboration for limitless growth. – “Empowering Your Business with Flexi Growth Tools”.",
       },
     ],
   },
@@ -74,7 +76,7 @@ export const home = {
           "Manage multiple clinics, their schedules, appointments, and patient records seamlessly with our app. Access patient information anytime, anywhere, for efficient clinic management and care delivery.",
         detailLInk: "#",
         trailLink: "#",
-        mainImg: `${medzoImg}`,
+        mainImg: ``,
       },
       {
         logo: `${edzoLogoImg}`,
@@ -82,31 +84,38 @@ export const home = {
           "A user-friendly e-learning SaaS platform offering interactive modules, expert-led content, and flexible access for a seamless learning experience. It ensures a dynamic and practical learning journey",
         detailLInk: "#",
         trailLink: "#",
-        mainImg: `${edzoImg}`,
+        mainImg: ``,
       },
     ],
   },
   serviceSection: {
     services: [
       {
-        img: "",
-        title: "Product Design",
+        img: `${design}`,
+        title: "Design",
         description:
-          "We blend art and technology, form and function, ideas and execution. In our digital playground, creativity is king and every pixel tells a story. With us, your brand's vision takes shape in vibrant, tangible forms, turning the abstract into the iconic.",
+          " Our design experts create visually stunning and user-friendly interfaces that resonate with your audience. We craft responsive, brand-aligned designs that offer seamless experiences across all devices.",
+          important:"”Craft. Create. Captivate.”",
         link: "",
       },
       {
-        img: "",
-        title: "Product Design",
-        description: "description",
+        img: `${development}`,
+        title: "Development",
+        description:
+          "  We craft scalable, powerful apps that push your business higher. Mobile or web, our solutions are fast, secure, and built to inspire.",
+          important:"“Design. Develop. Deliver.”",
         link: "",
       },
+  
       {
-        img: "",
-        title: "Product Design",
-        description: "description",
+        img: `${software}`,
+        title: "Software Support",
+        description:" We provide full support to ensure your websites and apps stay secure, updated, and optimized for peak performance. Trust our expert team for seamless maintenance and issue resolution",
+          important:"",
         link: "",
       },
+  
+  
     ],
   },
   growthSection: {

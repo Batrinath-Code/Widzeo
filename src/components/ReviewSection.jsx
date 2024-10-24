@@ -19,16 +19,16 @@ const ReviewSection = () => {
   return (
     <>
     <section className="py-16 bg-white">
-      <div className=" mx-auto pl-2 md:px-10">
-        <h2 className="text-title-sm md:text-title-md font-bold mb-2 text-gray-600">Loved by many</h2>
-        <h3 className="text-title-sm md:text-title-md font-bold mb-1 md:mb-8 text-gray-600">
+      <div className=" mx-auto pl-2 lg:px-10">
+        <h2 className="text-title-sm lg:text-title-md font-bold mb-2 text-gray-600">Loved by many</h2>
+        <h3 className="text-title-sm lg:text-title-md font-bold mb-1 lg:mb-8 text-gray-600">
           Trusted by all :)
         </h3>
 
-        <div className="p-4 md:p-8 rounded-lg">
-          <div className="mb-4 text-title-sm md:text-title-md">01/06</div>
-          <div className="px-0 md:px-52">
-          <blockquote className="text-description-sm md:text-6xl mb-6 text-gray-600 ">
+        <div className="p-4 lg:p-8 rounded-lg">
+          <div className="mb-4 text-title-sm lg:text-title-md">01/06</div>
+          <div className="px-0 lg:px-52">
+          <blockquote className="text-description-sm lg:text-6xl mb-6 text-gray-600 ">
             "As a satisfied customer of [Widezo], I want to share my positive
             experience with others. Their software as a service platform has
             greatly improved the efficiency and productivity of our business
@@ -39,11 +39,11 @@ const ReviewSection = () => {
             <img
               src="https://placehold.co/75x75"
               alt="s"
-              className="w-14 md:w-30 h-14 md:h-30 rounded-full mr-4"
+              className="w-14 lg:w-30 h-14 lg:h-30 rounded-full mr-4"
             />
             <div>
-              <div className="text-description-sm md:text-3xl font-semibold">Savannah Nguyen</div>
-              <div className="text-description-sm md:text-2xl text-gray-600">Bosch Design head</div>
+              <div className="text-description-sm lg:text-3xl font-semibold">Savannah Nguyen</div>
+              <div className="text-description-sm lg:text-2xl text-gray-600">Bosch Design head</div>
             </div>
             
           </div>

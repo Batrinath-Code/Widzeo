@@ -1,14 +1,18 @@
 import React from "react";
 import Button from "./Button";
-import MultiScrollEffect from "./MultiScrollEffect";
+// import MultiScrollEffect from "./MultiScrollEffect";
+import medzoImg from '../assets/medzoImg.png'
+import edzoImg from '../assets/edzoImg.png'
+
 
 const ProductCard = ({ name, description, logoSrc, screenshotsSrc, left }) => (
   <div
-    className={`flex ${
+    className={` flex ${
       left ? "flex-col-reverse" : "flex-col"
-    } md:flex-row items-center justify-around mb-16`}
+    } lg:flex-row items-center justify-center mb-9 lg:mb-16 bg-[url('./bgPattern1.svg')] bg-cover bg-no-repeat`}
+    style={!left ? {backgroundPosition: 'right -800px  top 30%'} : {background:'none'}}
   >
-    <div className="w-full md:w-[25%]">
+    <div className="w-full lg:w-[30%]">
       <img
         src={logoSrc}
         alt={`${name} logo`}
@@ -18,7 +22,7 @@ const ProductCard = ({ name, description, logoSrc, screenshotsSrc, left }) => (
       <p className="text-gray-600 mb-6 text-2xl text-center md:text-left leading-loose">
         {description}
       </p>
-      <div className="flex gap-4">
+      <div className=" flex justify-start items-start  sm:mx-auto w-[400px]">
         <Button>
           Explore Details
           <svg
@@ -52,11 +56,11 @@ const ProductCard = ({ name, description, logoSrc, screenshotsSrc, left }) => (
       </div>
     </div>
     <div
-      className={`w-full md:w-[55%] overflow-hidden self-center  ${
+      className={`w-full lg:w-[45%] overflow-hidden  lg:self-end  ${
         left ? "order-first" : "order-last"
       }`}
     >
-      {left ? <MultiScrollEffect edzo={left} /> : <MultiScrollEffect />}
+      {left ?<img className=" sm:100vw "  src={edzoImg} alt="medzo img" /> : <img className=" sm:100vw "  src={medzoImg} alt="medzo img" />}
     </div>
   </div>
 );
@@ -66,8 +70,8 @@ const ProductSection = ({ data }) => {
   const edzoData = data.products[1];
   return (
     <>
-      <section className="py-0 md:py-16 bg-gray-50">
-        <div className=" mx-auto px-4">
+      <section className="py-0 lg:py-16 ">
+        <div className="w-full px-4 ">
           <h1 className="text-title-sm md:text-title-md text-gray-800 font-bold text-center mb-16">
             {data.titleText}
           </h1>

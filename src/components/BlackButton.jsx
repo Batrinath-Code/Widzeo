@@ -7,7 +7,7 @@ const BlackButton = ({ text, white }) => {
         white == "true"
           ? "bg-white text-background px-2 rounded-md"
           : "bg-gray-900 text-white pl-4 pr-1 md:pl-6 md:pr-1 rounded-full"
-      }   py-1  md:py-2 text-lg font-semibold hover:bg-background transition duration-300`}
+      }   py-1  md:py-2 text-xs lg:text-lg font-semibold hover:bg-background transition duration-300`}
     >
       {text}
       {white == "true" ? (
